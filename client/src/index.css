@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
 :root {
-    --color-bg: #3846be;
+    --font-family: 'Wallpoet', cursive;
+
+    --gradient-text: linear-gradient(90deg, rgba(183, 185, 255, 1) 0%, rgba(43, 65, 200, 1) 100%);
+
+    --color-bg: #b3e2f8;
+    --color-text: #261c4d;
 }

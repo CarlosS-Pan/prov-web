@@ -11,7 +11,6 @@ function App() {
       <header className="gradient-bg">
         <Navbar />
         <Header />
-        {/* <h1>React and flask</h1> */}
       </header>
     </div>
   );

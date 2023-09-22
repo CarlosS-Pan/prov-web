@@ -10,7 +10,8 @@ function App() {
     <div className="App">
       <header className="gradient-bg">
         <Navbar />
-        <Header />
+
+        {/* <Header /> */}
       </header>
     </div>
   );

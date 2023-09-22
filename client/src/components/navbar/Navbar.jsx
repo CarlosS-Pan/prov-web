@@ -1,23 +1,45 @@
-import React from 'react'
-// import { RiMenu3Line, RiCloseLin } from 'react-icons/ri';
+// import React from 'react'
+// import { RiMenu3Line, RiCloseLin } from 'reaact-icons/ri';
 import './navbar.css'
 import logo from '../../assets/logo.svg'
 
+function Sections() {
+  return (
+  <>
+    <div className="navbar-links">
+      <ul className="navbar-links_container">
+        <li>
+          <a className="navigation-link" href="#home">Home</a>
+        </li>
+        <li>
+          <a className="navigation-link" href="#products">Products</a>
+        </li>
+        <li>
+          <a className="navigation-link" href="#services">Services</a>
+        </li>
+        <li>
+          <a className="navigation-link" href="#abtus">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </>
+)}
+
+function Logo() {
+  return (
+  <div className="logo-container">
+    <div className="logo">
+      <img src={logo} alt="loading logo" />
+    </div>
+  </div>)
+}
+
 function Navbar() {
   return (
-    <div className="omniliq__navbar">
-      <div className="omniliq__navbar-links">
-        <div className="omniliq__navbar-links_logo">
-          <img src={logo} alt="loading logo" />
-        </div>
-        <div className="omniliq__navbar-links_container">
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#services">Services</a>
-          <a href="#abtus">About Us</a>
-        </div>
-      </div>
-    </div>
+    <header className="header">
+      <Logo />
+      <Sections />
+    </header>
   )
 }
 

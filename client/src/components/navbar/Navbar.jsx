@@ -1,46 +1,37 @@
 // import React from 'react'
 // import { RiMenu3Line, RiCloseLin } from 'reaact-icons/ri';
 import './navbar.css'
-import logo from '../../assets/logo.svg'
-
-function Sections() {
-  return (
-  <>
-    <div className="navbar-links">
-      <ul className="navbar-links_container">
-        <li>
-          <a className="navigation-link" href="#home">Home</a>
-        </li>
-        <li>
-          <a className="navigation-link" href="#products">Products</a>
-        </li>
-        <li>
-          <a className="navigation-link" href="#services">Services</a>
-        </li>
-        <li>
-          <a className="navigation-link" href="#abtus">About Us</a>
-        </li>
-      </ul>
-    </div>
-  </>
-)}
-
-function Logo() {
-  return (
-  <div className="logo-container">
-    <div className="logo">
-      <img src={logo} alt="loading logo" />
-    </div>
-  </div>)
-}
+import { useState, useEffect } from "react";
+import { Sections } from "./Sections.jsx";
+import { Logo } from "./Logo";
 
 function Navbar() {
+
+  const [scrolling, setScrolling] = useState(false)
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scroll > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    }
+  
+    window.addEventListener("scroll", handleScroll);
+
+    return() => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+    
+  }, []);
+  
   return (
-    <header className="header">
+    <header className={`header${scrolling ? "scrolled" : ""}`}>
       <Logo />
       <Sections />
     </header>
-  )
+  );
 }
 
 export default Navbar

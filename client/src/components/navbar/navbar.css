@@ -8,7 +8,11 @@
     align-items: center;
     padding: 3% 0% 0%;
 }
+.header.scrolled {
+    padding: 1% 0% 0%;
+}
 
+/* LOGO AREA */
 .logo-container {
     height: 100%;
     width: 100%;
@@ -24,6 +28,8 @@
     height: 50px;
 }
 
+
+/* the main container for links */
 .navbar-links {
     /* flex: 1; */
     display: flex;
@@ -31,16 +37,15 @@
     width: 100%;
     padding: 0% 0% 0%;
     box-shadow: 0px 4px 5px 1px rgb(133, 133, 245);
-}
-.navbar-links li:hover{
-    background-color: rgb(186, 255, 255);
-    /* transition: color 3 ease; */
+
+    transition: 1s;
 }
 
+.navbar-links:hover {
+    background-color: rgb(224, 185, 255);
+}
+/* the container that wraps the links */
 .navbar-links_container {
-    /* flex: 1; */
-    /* box-sizing: border-box; */
-    /* outline: 2px solid black; */
     display: flex;
     width:  100%;
     flex-direction: row;
@@ -51,13 +56,18 @@
     overflow: auto;
 }
 
+/* for li elements in container*/
+.navbar-links_container > li{
+    transition:  0.7s;
+}
+/* li elements when hovered */
+.navbar-links_container > li:hover {
+    background-color: rgb(81, 127, 255);
+}
+
+/* individual link */
 .navigation-link {
     display: block;
-}
-.omniliq__navbar-sign {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .navbar-links_container a,

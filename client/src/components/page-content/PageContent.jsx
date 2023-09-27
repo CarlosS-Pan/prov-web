@@ -1,6 +1,6 @@
 import "./page-content.css";
 
-function MainContent() {
+const PageContent = () => {
     return (
         <>
             <div className="aboutus">
@@ -10,4 +10,4 @@ function MainContent() {
     )
 }
 
-export default MainContent
+export default PageContent;

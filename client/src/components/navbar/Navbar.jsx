@@ -4,7 +4,7 @@ import Sections from "./smaller-components/Sections";
 import Logo from "./smaller-components/Logo";
 import MobileSections from "./smaller-components/MobileSections";
 
-function Navbar() {
+const Navbar = () => {
 
   const [scrolling, setScrolling] = useState(false)
 
@@ -33,4 +33,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;

@@ -1,6 +1,6 @@
 import '../navbar.css'
 
-export default function MobileSections() {
+const MobileSections = () => {
     return (
         <>
           <div className="navbar-links">
@@ -22,3 +22,5 @@ export default function MobileSections() {
         </>
     )
 }
+
+export default MobileSections;

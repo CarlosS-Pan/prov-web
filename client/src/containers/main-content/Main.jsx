@@ -1,8 +1,10 @@
-import MainContent from "../../components/page-content/PageContent";
 import "./main.css";
+import { PageContent } from "../../components";
 
-function Main() {
+const Main = () => {
     return (
-        <MainContent />
+        <PageContent />
     )
 }
+
+export default Main;

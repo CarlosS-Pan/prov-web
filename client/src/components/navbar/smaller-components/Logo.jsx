@@ -2,7 +2,7 @@ import '../navbar.css'
 import { Link } from "react-router-dom";
 import companyLogo from '../../../assets/logo.svg'
 
-export default function Logo() {
+const Logo = () => {
     return (
     <div className="logo-container">
       <div className="logo">
@@ -12,3 +12,5 @@ export default function Logo() {
       </div>
     </div>)
   }
+
+export default Logo;

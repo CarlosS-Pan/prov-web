@@ -1,7 +1,7 @@
 import React from 'react'
 import './products.css'
 
-function Products() {
+const Products = () => {
   return (
     <div>Products</div>
   )

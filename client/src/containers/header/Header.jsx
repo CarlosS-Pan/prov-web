@@ -1,7 +1,7 @@
 import './header.css'
 import { Navbar } from '../../components'
 
-function Header() {
+const Header = () => {
   return (
     <header className="gradient-bg">
       <Navbar />      

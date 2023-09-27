@@ -1,6 +1,6 @@
-import './navbar.css'
+import '../navbar.css'
 
-export function Mobilesections() {
+export default function MobileSections() {
     return (
         <>
           <div className="navbar-links">

@@ -1,6 +1,6 @@
-import './navbar.css'
+import '../navbar.css'
 
-export function Sections() {
+export default function Sections() {
     return (
         <>
           <div className="navbar-links">

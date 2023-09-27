@@ -1,9 +1,12 @@
-import React from 'react'
 import './header.css'
+import { Navbar } from '../../components'
 
 function Header() {
   return (
-    <div>Header</div>
+    <header className="gradient-bg">
+      <Navbar />      
+    </header>
+
   )
 }
 

@@ -1,0 +1,5 @@
+.gradient-bg {
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 1) 0%, rgba(179, 226, 248, 1) 100%, rgba(179, 226, 248, 1) 100%);
+  }
+  

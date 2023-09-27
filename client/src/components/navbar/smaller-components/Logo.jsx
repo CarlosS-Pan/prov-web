@@ -1,8 +1,8 @@
-import './navbar.css'
+import '../navbar.css'
 import { Link } from "react-router-dom";
-import companyLogo from '../../assets/logo.svg'
+import companyLogo from '../../../assets/logo.svg'
 
-export function Logo() {
+export default function Logo() {
     return (
     <div className="logo-container">
       <div className="logo">

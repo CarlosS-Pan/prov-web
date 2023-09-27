@@ -1,9 +1,8 @@
-// import React from 'react'
-// import { RiMenu3Line, RiCloseLin } from 'reaact-icons/ri';
 import './navbar.css'
 import { useState, useEffect } from "react";
-import { Sections } from "./Sections.jsx";
-import { Logo } from "./Logo";
+import Sections from "./smaller-components/Sections";
+import Logo from "./smaller-components/Logo";
+import MobileSections from "./smaller-components/MobileSections";
 
 function Navbar() {
 

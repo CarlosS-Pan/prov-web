@@ -1,8 +1,6 @@
 import './navbar.css'
 import { useState, useEffect } from "react";
-import Sections from "./smaller-components/Sections";
-import Logo from "./smaller-components/Logo";
-import MobileSections from "./smaller-components/MobileSections";
+import { Sections, Logo, MobileSections} from "./smaller-components";
 
 const Navbar = () => {
 

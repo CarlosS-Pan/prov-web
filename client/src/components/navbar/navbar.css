@@ -1,8 +1,8 @@
 .header {
     display: flex;
+    /* position: fixed; */
 
     flex-direction: column;
-    /* justify-content to space in X axis  */
 
     /* align-items to center child component in the Y axis */
     align-items: center;
@@ -13,7 +13,7 @@
 }
 
 /* LOGO AREA */
-.logo-container {
+.logo_container {
     height: 100%;
     width: 100%;
     padding: 0% 0% 1%;

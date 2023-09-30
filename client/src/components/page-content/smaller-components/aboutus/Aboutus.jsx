@@ -1,5 +1,5 @@
 import "./aboutus.css";
-import { snowflake } from "../../../assets";
+import { snowflake } from "../../../../assets";
 
 const Aboutus = () => {
     return (
@@ -13,16 +13,16 @@ const Aboutus = () => {
                         <img src = { snowflake } alt="snowflake" />
                     </div>
                     <div className="snowflake-icon">
-                        <img className="snowflakeAnimation" src = { snowflake } alt="snowflake" />
+                        <img src = { snowflake } alt="snowflake" />
                     </div>
                     <div className="snowflake-icon">
-                        <img className="snowflakeAnimation" src = { snowflake } alt="snowflake" />
+                        <img src = { snowflake } alt="snowflake" />
                     </div>
                 </div>
 
 
                 <div className="description_container">
-                    <div className="secription-title">
+                    <div className="description-title">
                         ABOUT US
                     </div>
                     <div className="description-abtus">

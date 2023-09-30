@@ -4,10 +4,10 @@ const Welcome = () => {
     return(
     <div className="welcome-container">
         <div className="welcome-description">
-            asdfasdf, asdfa  asdfa asdfa ,asdfa asdfa ,asdfaasdfaasdfa, asdfa
-            sdafasdfaasdfaasdfa asdfa asdfaasdfa  asdfaasdfaasdfa
+            asdfasdf, asdfa  asdfa asdfa ,asdfa asdfa ,asdfaas dfaasdfa, asdfa
+            sdafasd faasdfaasdfa asdfa asdfaasdfa  asdfaas dfaasdfa
             asdfsadfasdf
-            asdfasdfasdfasdf
+            asdfasd fasdfasdf
             asdfasdf
         </div>
     </div>

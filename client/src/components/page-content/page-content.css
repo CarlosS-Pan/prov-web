@@ -1,41 +1,10 @@
 /* UTILITY CLASSES */
 .content {
     display: flex;
-    /* margin: 0 auto; */
-
     height: 1200px;
     /* padding: 1em; */
     /* width: 80%; */
 
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-}
-
-
-/* ANIMATION CLASSES*/
-@keyframes snowflakeMovement {
-    
-    0% {
-        transform: rotate(0.025turn);
-    }
-    
-    50% {
-        transform: rotate(-0.025turn);
-    }
-    100% {
-        transform: rotate(0.025turn);
-    }
-}
-
-.snowflakeAnimation {
-    /* animation: 
-    name
-    duration
-    timingFunction
-    delay
-    iterationCount
-    direction
-    fillMode */
-    animation: snowflakeMovement 10s ease-in-out 0s infinite normal both;
 }

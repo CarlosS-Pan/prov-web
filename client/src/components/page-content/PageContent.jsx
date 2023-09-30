@@ -1,15 +1,7 @@
 import "./page-content.css";
-import { Welcome, Aboutus } from "./smaller-components";
+import { Welcome, Aboutus, Photos } from "./smaller-components";
 
-const Photos = () => {
-    return (
-        <>
-        <div className="carousel-container">
 
-        </div>
-        </>
-    )
-}
 const PageContent = () => {
     return (
         <>

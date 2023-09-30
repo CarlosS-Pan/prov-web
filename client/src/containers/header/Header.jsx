@@ -3,7 +3,7 @@ import { Navbar } from '../../components'
 
 const Header = () => {
   return (
-    <header className="gradient-bg">
+    <header className="header-bg">
       <Navbar />      
     </header>
 

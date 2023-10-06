@@ -1,10 +1,10 @@
-import "./main.css";
+import "./home.css";
 import { PageContent } from "../../components";
 
-const Main = () => {
+const HomeContainer = () => {
     return (
         <PageContent />
     )
 }
 
-export default Main;
+export default HomeContainer;

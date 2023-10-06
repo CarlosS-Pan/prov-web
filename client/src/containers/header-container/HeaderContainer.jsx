@@ -1,7 +1,7 @@
 import './header.css'
 import { Navbar } from '../../components'
 
-const Header = () => {
+const HeaderContainer = () => {
   return (
     <header className="header-bg">
       <Navbar />      
@@ -10,4 +10,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HeaderContainer

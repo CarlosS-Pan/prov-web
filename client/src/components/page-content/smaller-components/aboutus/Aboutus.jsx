@@ -9,13 +9,13 @@ const Aboutus = () => {
 
                 <div className="snowflake-icon_container">
                     {/* {["bigsnowflake", "smallSnowflake", "smallSnowflake"]} */}
-                    <div className="snowflake-icon">
+                    <div className="snowflake-icon-small snowflakeAnimation">
                         <img src = { snowflake } alt="snowflake" />
                     </div>
-                    <div className="snowflake-icon">
+                    <div className="snowflake-icon-big">
                         <img src = { snowflake } alt="snowflake" />
                     </div>
-                    <div className="snowflake-icon">
+                    <div className="snowflake-icon-small snowflakeAnimation">
                         <img src = { snowflake } alt="snowflake" />
                     </div>
                 </div>

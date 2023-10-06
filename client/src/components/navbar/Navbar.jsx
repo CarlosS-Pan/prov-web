@@ -9,8 +9,10 @@ const Navbar = () => {
   useEffect(() => {
     function handleScroll() {
       if (window.scroll > 0) {
+        console.log("💩")
         setScrolling(true);
       } else {
+        console.log("Not 💩")
         setScrolling(false);
       }
     }

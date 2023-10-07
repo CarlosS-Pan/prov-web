@@ -4,7 +4,7 @@ import './products-content.css'
 const Products = () => {
   return (
     <div>
-      <h1>Products Page</h1>
+      <h1>Products si</h1>
     </div>
   )
 }

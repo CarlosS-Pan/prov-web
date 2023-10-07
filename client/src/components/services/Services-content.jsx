@@ -2,7 +2,9 @@ import './services-content.css'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <h1>
+      Services
+    </h1>
   )
 }
 

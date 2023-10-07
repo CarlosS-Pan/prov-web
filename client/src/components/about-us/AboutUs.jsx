@@ -2,9 +2,9 @@ import './about-us.css'
 
 const AboutUs = () => {
     return ( 
-        <div>
-
-        </div>
+        <h1>
+            about us si
+        </h1>
     );
 }
  

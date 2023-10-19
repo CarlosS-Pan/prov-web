@@ -4,7 +4,7 @@ import { p1, p2, p3, p4, p5 } from "../../../../assets/index";
 const Photos = () => {
     return (
         <>
-        <div className="wrapper">
+        <div className="photos-container">
             <ul className="carousel">
                 <li className="card">
                     {/* <div className="image"> */}

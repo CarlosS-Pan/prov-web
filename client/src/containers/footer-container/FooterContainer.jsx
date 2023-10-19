@@ -1,8 +1,11 @@
 import './footer.css'
+import { FooterNav } from '../../components'
 
 const FooterContainer = () => {
   return (
-    <div>Footer</div>
+    <>
+    <FooterNav />
+    </>
   )
 }
 

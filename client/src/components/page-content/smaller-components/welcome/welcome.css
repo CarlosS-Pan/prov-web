@@ -1,18 +1,22 @@
 /* welcome section of the page (usually what the user sees when landing) */
 .welcome-container {
+    display: flex;
     /* position: relative; */
     height: auto;
-    display: flex;
     width: 80%;
-
-    padding: 1.7rem 0rem ;
 
     /* this only justifies and aligns the description-div */
     justify-content: center;
     align-items: center;
+
+    padding: 3rem 0rem ;
+
+    /* border: 2px solid red; */
+    margin: 1rem 0;
+
 }
 .welcome-description {
+    text-align: center;
     font-size: 1.5rem;
     max-width: 100ch;
-    text-align: center;
 }

@@ -1,7 +1,8 @@
 /* UTILITY CLASSES */
 .content {
     display: flex;
-    height: 1200px;
+    height: auto;
+    color: var(--color-text);
     /* padding: 1em; */
     /* width: 80%; */
 

@@ -1,5 +1,5 @@
 import "./page-content.css";
-import { Welcome, Aboutus, Photos } from "./smaller-components";
+import { Welcome, Aboutus, Photos, Contact, Brands } from "./smaller-components";
 
 
 const PageContent = () => {
@@ -9,6 +9,8 @@ const PageContent = () => {
                 <Welcome />
                 <Aboutus />
                 <Photos />
+                <Contact />
+                <Brands />
             </div>
         </>
     )

@@ -36,13 +36,13 @@
     height: 100%;
     width: 100%;
     padding: 0% 0% 0%;
-    box-shadow: 0px 4px 5px 1px rgb(133, 133, 245);
+    box-shadow: 0px 4px 5px 1px var(--color-accent);
 
     transition: 1s;
 }
 
 .navbar-links:hover {
-    background-color: rgb(224, 185, 255);
+    background-color: var(--color-primary);
 }
 /* the container that wraps the links */
 .navbar-links_container {
@@ -62,7 +62,7 @@
 }
 /* li elements when hovered */
 .navbar-links_container > li:hover {
-    background-color: rgb(81, 127, 255);
+    background-color: var(--color-secondary);
 }
 
 /* individual link */
@@ -73,7 +73,7 @@
 .navbar-links_container a,
 .navbar-sign p,
 .navbar-menu_container p {
-    color: #1100fa;
+    color: var(--color-text);
     font-family: var(--font-family);
     font-weight: thin;
     font-size: 18px;

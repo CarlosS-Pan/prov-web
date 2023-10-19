@@ -1,4 +1,5 @@
 import '../navbar.css'
+import { Link } from "react-router-dom";
 
 const Sections = () => {
     return (
@@ -6,19 +7,19 @@ const Sections = () => {
         <div className="navbar-links">
           <ul className="navbar-links_container">
             <li>
-              <a className="navigation-link" href="/">Home</a>
+              <Link className="navigation-link" to="/">Home</Link>
+            </li>
+            <Link className="navigation-link" to="/products">
+              <p>Products</p>
+            </Link>
+            <li>
+              <Link className="navigation-link" to="/services">Services</Link>
             </li>
             <li>
-              <a className="navigation-link" href="/products">Products</a>
+              <Link className="navigation-link" to="/about-us">About Us</Link>
             </li>
             <li>
-              <a className="navigation-link" href="/services">Services</a>
-            </li>
-            <li>
-              <a className="navigation-link" href="/about-us">About Us</a>
-            </li>
-            <li>
-              <a className="navigation-link" href="/contact-us">Contact Us</a>
+              <Link className="navigation-link" to="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>

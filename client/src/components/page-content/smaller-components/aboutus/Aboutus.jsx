@@ -15,7 +15,7 @@ const Aboutus = () => {
                     <div className="snowflake-icon-big">
                         <img src = { snowflake } alt="snowflake" />
                     </div>
-                    <div className="snowflake-icon-small snowflakeAnimation">
+                    <div className="snowflake-icon-small reverseSnowflakeAnimation back">
                         <img src = { snowflake } alt="snowflake" />
                     </div>
                 </div>

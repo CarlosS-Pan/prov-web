@@ -28,13 +28,6 @@ const Brands = () => {
                     <img src = {logo4} alt="logo4" />
                     <img src = {logo5} alt="logo5" />
                 </div>
-                <div className="brands-wrap">
-                    <img src = {logo1} alt="logo1" />
-                    <img src = {logo2} alt="logo2" />
-                    <img src = {logo3} alt="logo3" />
-                    <img src = {logo4} alt="logo4" />
-                    <img src = {logo5} alt="logo5" />
-                </div>
         </div>
         </>
     );

@@ -23,7 +23,7 @@ const Aboutus = () => {
 
                 <div className="description_container">
                     <div className="description-title">
-                        ABOUT US
+                        <h1>About Us</h1>
                     </div>
                     <div className="description-abtus">
                         hola amigos de youtube otra vez en un nuevo en directo del gta 5

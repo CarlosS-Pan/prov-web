@@ -1,0 +1,134 @@
+/* Description of the company or the services maybe */
+.aboutus-container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1.7rem 0;
+    
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* border: 2px solid red; */
+
+    
+}
+
+.snowflake-icon_container {
+    --num-columns: 5;
+    --num-rows: 5;
+    --square-dimension: 100px;
+    --gap:10px;
+    
+    padding: 0 var(--gap);
+    display: grid;
+
+    /* repeat({numCOL/ROW} , {width} */
+    grid-template-columns: repeat(var(--num-columns), minmax(var(--square-dimension), 1fr));
+    grid-template-rows: repeat(var(--num-rows), minmax(var(--square-dimension), 1fr));
+    gap: var(--gap);
+}
+.snowflake-icon-big img{
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    /* grid-template-rows: 100px; */
+    height: calc(var(--square-dimension) * var(--num-rows));
+    width: calc(var(--square-dimension) * var(--num-columns));
+
+    
+    /* transition:
+    duration
+    timingFunction
+    delay
+    */
+    transition: 0.5s ease 0s;
+}
+
+/* big star */
+.snowflake-icon-big {
+    grid-area: 1 / 2 / 6 / 7;
+}
+.snowflake-icon-big img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* small star #1 (upper)*/
+.snowflake-icon-small, .snowflakeAnimation img{
+    height: var(--square-dimension);
+    width: var(--square-dimension);
+}
+.snowflake-icon-small.snowflakeAnimation {
+    /* rowStart/colStart/rowEnd/colEnd or left/top/right/bottom */
+    grid-area: 2 / 1 / 4 /3;
+    z-index: 1;
+}
+
+/* small star #2 (lower)*/
+.snowflake-icon-small, .reverseSnowflakeAnimation img {
+    height: 100px;
+    width: 100px;
+}
+.snowflake-icon-small.reverseSnowflakeAnimation {
+    grid-row: 4/5;
+}
+
+
+/* DESCRIPTION CONTAINER */
+.description_container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.description-title h1{
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+.description-abtus {
+    max-width: 60ch;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+/* ANIMATION CLASSES*/
+@keyframes snowflakeMovement {
+    
+    0% {
+        transform: rotate(0.025turn);
+    }
+    50% {
+        transform: rotate(-0.025turn);
+    }
+    100% {
+        transform: rotate(0.025turn);
+    }
+}
+@keyframes reverseMovement {
+    0% {
+        transform: rotate(-0.025turn);
+    }
+    50% {
+        transform: rotate(0.025turn);
+    }
+    100% {
+        transform: rotate(-0.025turn);
+    }
+}
+
+.snowflakeAnimation {
+    /* animation: 
+    name
+    duration
+    timingFunction
+    delay
+    iterationCount
+    direction
+    fillMode */
+    animation: snowflakeMovement 10s ease-in-out 0s infinite normal both;
+}
+.reverseSnowflakeAnimation {
+    animation: reverseMovement 10s ease-in-out 0s infinite normal both;
+
+}

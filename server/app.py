@@ -20,6 +20,13 @@ def get_time():
         "Language": "python"
     }
 
+# Routing to products tab
+
+
+@app.route('/products')
+def products():
+    return 'This returns products page'
+
 
 # Running app
 if __name__ == '__main__':

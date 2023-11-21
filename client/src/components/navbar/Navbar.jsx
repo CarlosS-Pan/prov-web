@@ -26,7 +26,7 @@ const Navbar = () => {
   }, []);
   
   return (
-    <header className={`header${scrolling ? "scrolled" : ""}`}>
+    <header className={'header'}>
       <Logo />
       <Sections />
     </header>

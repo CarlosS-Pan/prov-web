@@ -6,17 +6,14 @@
 
     /* align-items to center child component in the Y axis */
     align-items: center;
-    padding: 3% 0% 0%;
-}
-.header.scrolled {
-    padding: 1% 0% 0%;
+    padding: 2% 0% 0%;
 }
 
 /* LOGO AREA */
 .logo_container {
     height: 100%;
     width: 100%;
-    padding: 0% 0% 1%;
+    padding: 0% 0% 0.5%;
 }
 .logo {
     display: flex;
@@ -24,8 +21,8 @@
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -49,9 +46,10 @@
     display: flex;
     width:  100%;
     flex-direction: row;
-    padding: 0% 15%;
     justify-content: space-between;
     align-items: center;
+
+    padding: 0% 15%;
     list-style-type: none;
     overflow: auto;
 }
@@ -59,6 +57,7 @@
 /* for li elements in container*/
 .navbar-links_container > li{
     transition:  0.7s;
+    justify-content: center;
 }
 /* li elements when hovered */
 .navbar-links_container > li:hover {
@@ -70,9 +69,11 @@
     display: block;
 }
 
-.navbar-links_container a,
-.navbar-sign p,
-.navbar-menu_container p {
+.navbar-links_container a{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+
     color: var(--color-text);
     font-family: var(--font-family);
     font-weight: thin;

@@ -8,27 +8,27 @@ const Photos = () => {
             <ul className="carousel">
                 <li className="card">
                     {/* <div className="image"> */}
-                        <img src={p1} alt="img" />
+                        <img draggable = "false" src={p1} alt="img" />
                     {/* </div> */}
                 </li>
                 <li className="card">
                     {/* <div className="image"> */}
-                        <img src={p2} alt="img" />
+                        <img draggable = "false" src={p2} alt="img" />
                     {/* </div> */}
                 </li>
                 <li className="card">
                     {/* <div className="image"> */}
-                        <img src={p3} alt="img" />
+                        <img draggable = "false" src={p3} alt="img" />
                     {/* </div> */}
                 </li>
                 <li className="card">
                     {/* <div className="image"> */}
-                        <img src={p4} alt="img" />
+                        <img draggable = "false" src={p4} alt="img" />
                     {/* </div> */}
                 </li>
                 <li className="card">
                     {/* <div className="image"> */}
-                        <img src={p5} alt="img" />
+                        <img draggable = "false" src={p5} alt="img" />
                     {/* </div> */}
                 </li>
             </ul>

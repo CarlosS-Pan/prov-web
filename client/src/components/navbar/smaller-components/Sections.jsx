@@ -9,9 +9,9 @@ const Sections = () => {
             <li>
               <Link className="navigation-link" to="/">Home</Link>
             </li>
-            <Link className="navigation-link" to="/products">
-              <p>Products</p>
-            </Link>
+            <li>
+              <Link className="navigation-link" to="/products">Products</Link>
+            </li>
             <li>
               <Link className="navigation-link" to="/services">Services</Link>
             </li>
@@ -19,7 +19,7 @@ const Sections = () => {
               <Link className="navigation-link" to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link className="navigation-link" to="/contact-us">Contact Us</Link>
+              <Link className="navigation-link" to="/contact-us">Contact</Link>
             </li>
           </ul>
         </div>

@@ -34,6 +34,7 @@
     width: var(--brand-width);
     /* margin: 0 2rem; */
 
+    pointer-events: none;
 }
 
 .brands-container:hover .brands-wrap {

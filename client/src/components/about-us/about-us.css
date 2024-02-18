@@ -1,3 +1,26 @@
 .content-container {
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 33vh;
+    margin-top: 3rem;
+
+    
+    border: 1px solid black;
+}
+
+.description-container {
+    display: flex;
+    background-color: var(--color-accent);
+    /* justify-content: center; */
+    /* align-content: center; */
+    height: 50px;
+}
+
+.photos {
+    display: flex;
+    border: 1px solid red;
+
+    
 }

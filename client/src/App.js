@@ -1,20 +1,33 @@
 // Importing modules
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import "./App.css";
+import {
+  Header,
+  Home,
+  Products,
+  Services,
+  AboutUs,
+  ContactUs,
+  Footer,
+} from "./containers";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { Navbar, Sidebar, Products, Services } from "./components";
-import { Footer, Header } from "./containers";
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="gradient-bg">
-        <Navbar />
+    <Router>
+      <div className="App">
         <Header />
-        {/* <h1>React and flask</h1> */}
-      </header>
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/about-us" element={<AboutUs />}></Route>
+          <Route path="/contact-us" element={<ContactUs />}></Route>
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;

@@ -8,3 +8,46 @@
 body {
   background: var(--color-bg)
 }
+
+a {
+  color: unset;
+  text-decoration:underline;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.gradient-text {
+  background: var(--color-bg);
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+/* medium screen devices */
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    padding: 4rem;
+  }
+}
+
+/* small screen devices */
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .section__margin {
+    padding: 4rem 2rem;
+  }
+}

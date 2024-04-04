@@ -1,5 +1,6 @@
-export { default as logo } from "../assets/logo-icon.svg";
-export { default as snowflake } from "../assets/snowflake-icon.svg";
+export { default as logo } from "../assets/svgs/logo-icon.svg";
+export { default as snowflake } from "../assets/svgs/snowflake-icon.svg";
+export { default as handmoney } from "../assets/svgs/handmoney.svg";
 
 export { default as p1 } from "../assets/images/guoba.png";
 export { default as p2 } from "../assets/images/sanji.jpg";

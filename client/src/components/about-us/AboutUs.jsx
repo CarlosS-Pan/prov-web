@@ -1,5 +1,6 @@
 import './about-us.css'
 import { p1 } from '../../assets/index'
+import { handmoney } from '../../assets/index'
 
 const AboutUs = () => {
     return ( 
@@ -40,7 +41,38 @@ const AboutUs = () => {
                     </p>
                 </div>        
                 <div className="extended-photo">
-                <img src={ p1 } alt="choppa" />
+                <img src={ p1 } alt="guoba" />
+                </div>
+            </div>
+            <div className="reasons-bg">
+                <div className="reasons-container">
+                    <div className="reasons">
+                        
+                        <div className='svgs'>
+                            <img src={ handmoney } alt="hand" />
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, voluptates exercitationem sequi natus consequuntur eos quo ut ducimus pariatur corporis dolorem dolor culpa autem voluptate, doloribus iste tenetur. Dignissimos, odio.
+                        </p>
+                    </div>
+                    <div className="reasons">
+                        <div className="svgs" >
+                            <img src={ handmoney } alt="hand" />
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, eos! Autem, cum! Ad repellendus nulla, autem inventore, rem possimus suscipit voluptatibus a, natus nobis voluptate facilis nisi maxime repellat neque!</p>
+                    </div>
+                    <div className="reasons">
+                        <div className="svgs" >
+                            <img src={ handmoney } alt="hand" />
+                        </div>
+                        <p>Sunt id modi incidunt odit illum possimus ad, aspernatur quia nemo aliquid in sint facilis corporis! Aliquam eveniet natus quo. Sit expedita ipsa iure voluptas? Rerum, itaque eos. Laudantium, possimus!</p>
+                    </div>
+                    <div className="reasons">
+                        <div className="svgs">
+                            <img src={ handmoney } alt="hand" />
+                        </div>
+                        <p>Ullam eos molestiae dolor qui enim? Temporibus mollitia quisquam perspiciatis, in vero magni excepturi repudiandae itaque tenetur iure neque vel, aut est, non voluptatum voluptate doloremque amet officiis ab exercitationem.</p>
+                    </div>
                 </div>
             </div>
         </>

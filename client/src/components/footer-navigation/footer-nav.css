@@ -1,11 +1,6 @@
 .footer {
-    /* display: fixed; */
     width: 100%;
     background-color: var(--color-accent);
-    bottom: 0;
-
     text-align: center;
-    /* justify-content: center; */
-    /* align-items: center; */
 
 }

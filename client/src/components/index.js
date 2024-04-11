@@ -5,3 +5,4 @@ export { default as ProductsContent } from "./products/Products-content";
 export { default as ServicesContent } from "./services/Services-content";
 export { default as PageContent } from "./page-content/PageContent";
 export { default as FooterNav } from "./footer-navigation/FooterNav";
+export { default as ContactUsContent } from "./contact-us/ContactUs";

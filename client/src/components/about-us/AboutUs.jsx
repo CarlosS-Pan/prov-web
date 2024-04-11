@@ -7,7 +7,7 @@ const AboutUs = () => {
         <>
             <div className='content-container'>
                 <h1 className='content-title'>
-                    Who we are ?
+                    Who we are<span className="highlight-text-white">?</span>
                 </h1>
                 <div className="summary-container">
                     <p>
@@ -21,7 +21,7 @@ const AboutUs = () => {
                 <div className="extended-content">
                     {/* <h2 className="extended-title"> */}
                     <h2>
-                    <span className="esteinline"> A Decade of Excellence </span>
+                    <span className="highlight-text"> A Decade of Excellence </span>
                     in Refrigerated Unit Repairs and Parts Distribution.
                     </h2>
                     {/* <p className="extended-description"> */}

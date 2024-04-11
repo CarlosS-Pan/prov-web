@@ -1,10 +1,36 @@
-import React from 'react'
 import './navbar.css'
+import { useState, useEffect } from "react";
+import { Sections, Logo, MobileSections} from "./smaller-components";
 
-function Navbar() {
+const Navbar = () => {
+
+  const [scrolling, setScrolling] = useState(false)
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scroll > 0) {
+        console.log("💩")
+        setScrolling(true);
+      } else {
+        console.log("Not 💩")
+        setScrolling(false);
+      }
+    }
+  
+    window.addEventListener("scroll", handleScroll);
+
+    return() => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+    
+  }, []);
+  
   return (
-    <div>Navbar</div>
-  )
+    <header className={'header'}>
+      <Logo />
+      <Sections />
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;

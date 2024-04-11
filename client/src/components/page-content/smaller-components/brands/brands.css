@@ -1,0 +1,69 @@
+:root {
+    --total-brand: 5;
+    --brand-height: 100px;
+    --brand-width: 100px;
+}
+.brands-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    padding: 10px 10px;
+    position: relative;
+
+    /* border: 2px solid red; */
+    overflow: hidden;
+    background-color: var(--color-secondary);
+    white-space: nowrap;    
+}
+
+.brands-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 100%;
+    padding: 3rem 0;
+
+    /* border: 2px solid blue; */
+    /* overflow: hidden; */
+    animation: 20s slide infinite linear;
+}
+
+.brands-wrap img{
+    height: var(--brand-height);
+    width: var(--brand-width);
+    /* margin: 0 2rem; */
+
+    pointer-events: none;
+}
+
+.brands-container:hover .brands-wrap {
+    animation-play-state: paused;
+}
+.brands-container::before, .brands-container::after {
+    position: absolute;
+    height: 100%;
+    width: 12%;
+    top: 0;
+
+    content: "";
+    z-index: 1;
+}
+.brands-container::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), var(--color-secondary));
+}
+.brands-container::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-secondary));
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(calc(-100%));
+    }
+}
